@@ -44,7 +44,7 @@ render = ()=>{
     return (
         <div className="border">
             <button onClick={this.toggleForm}>{showForm ? 'hide' :  'show' }</button>
-        {showForm && <SongForm />}
+        {showForm && <SongForm addSong={this.addSong} />}
         <h1> Music Album:</h1>
         {this.renderMusic()}
         </div>

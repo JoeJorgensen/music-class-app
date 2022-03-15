@@ -19,6 +19,7 @@ class SongForm extends React.Component{
     handleSubmit = (e)=>{
         e.preventDefault();
         console.log(this.state)
+        this.props.addSong(this.state)
 
     }
     render(){
