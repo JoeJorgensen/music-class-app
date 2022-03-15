@@ -18,15 +18,22 @@ class Music extends React.Component{
         })
 
     }
+    deleteSong = (songName)=>{
+       let filterSongs = this.state.songs.filter(s=> s.name !== songName)
+       this.setState({
+           songs: filterSongs
+       })
 
+    }
     renderMusic = ()=>{
-        return this.state.songs.map(s=>{
+        return this.state.songs.map((s)=>{
             return (
                 <div className="border"> 
 
                 <h1>{s.name}</h1>
 
                 <p>{s.artist}</p>
+                <button onClick={()=>this.deleteSong(s.name)}>Delete Song</button>
                 
                 </div>
             )
