@@ -5,12 +5,12 @@ import { PRIMARY_COLOR, PRIMARY_DARK_COLOR, SECONDARY_COLOR, SUCCESS_COLOR} from
 
 const Badge = styled.span`
 color: white;
-font-size: 20px;
+font-size: 40px;
 padding: 4px 7px;
 margin: 10px;
 font-style: normal;
 font-weight: 600;
-line-height: 11px;
+
 background:${PRIMARY_COLOR};
 border-radius: ${props => props.rounded ? '15px' : '3px'};
 
@@ -28,7 +28,11 @@ ${(props)=>
 background-color:${SUCCESS_COLOR}
    `
 }
-
+${(props)=>
+    props.smallFont && css`
+    font-size: 20px;
+   `
+}
 `
 
 export default Badge

@@ -1,22 +1,33 @@
 import React from "react";
 import Badge from "../Styles/Badge";
 import Button from "../Styles/Button";
+import './Card.css';
 import SongForm from "./SongForm";
-import  './Card.css';
 
 class Music extends React.Component{
     constructor(props){
         super(props)
         //Initial state below
         this.state={songs:[
-        {name: ' Gold Digger ', artist: 'Kanye West'}, 
+        {name: ' Guilty Conscience ', artist:' 070 Shake ' },
         {name: ' We Are Young ', artist: 'Fun'},
+        {name: ' Gold Digger ', artist: 'Kanye West'}, 
+        {name: ' PPP ', artist:' Beach House ' },
         {name: ' Time ', artist:' Pink Floyd' },
         {name: ' The End ', artist:' The Doors' },
         {name: ' Brothers In Arms ', artist:' Dire Straits' },
         {name: ' Vienna ', artist:' Billy Joel' },
         {name: ' House Of The Rising Sun ', artist:' The Animals ' },
         {name: ' Going Up The Country ', artist:' Canned Heat ' },
+        {name: ' Past Lives ', artist:' BøRNS ' },
+        {name: ' All Apologies ', artist:' Nirvana ' },
+        {name: ' Outro ', artist:' M83 ' },
+
+
+        
+       
+        
+
         
     ], 
         showForm: false}

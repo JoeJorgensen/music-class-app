@@ -1,4 +1,5 @@
 import React from 'react'
+import Badge from '../Styles/Badge'
 import Button from '../Styles/Button'
 
 class SongForm extends React.Component{
@@ -25,12 +26,22 @@ class SongForm extends React.Component{
     }
     render(){
     return (
-        <div className='border'>
-            <h1>Song Form</h1>
+        <div className='card'>
+            {/* <h1>Song Form</h1> */}
             <form onSubmit={this.handleSubmit}>
-                <p>Name</p>
+                <Badge smallFont>Name</Badge>  
+                <br/>
+                <br/>
+
                 <input name= 'name' value={this.state.name} onChange={this.handleChange}/>
-                <p>Artist</p>
+                <br/>
+                <br/>
+                
+                <Badge smallFont>Artist</Badge>
+                <br/>
+                <br/>
+
+
                 <input name= 'artist' value={this.state.artist} onChange={this.handleChange}/>
 
                 <br/>
