@@ -64,3 +64,8 @@
     transform: rotate(360deg);
   }
 }
+
+.font {
+  font-size: '45px';
+  font-family: 'Smooch Sans', sans-serif;
+}

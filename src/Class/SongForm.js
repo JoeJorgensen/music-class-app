@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../Styles/Button'
 
 class SongForm extends React.Component{
 
@@ -34,7 +35,7 @@ class SongForm extends React.Component{
 
                 <br/>
                 <br/>
-                <button>Add Song</button>
+                <Button outline >Add Song</Button>
             </form>
         </div>
     )

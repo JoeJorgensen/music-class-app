@@ -2,15 +2,15 @@ import React from "react";
 import Badge from "../Styles/Badge";
 import Button from "../Styles/Button";
 import SongForm from "./SongForm";
-// import  './Card.css';
+import  './Card.css';
 
 class Music extends React.Component{
     constructor(props){
         super(props)
         //Initial state below
         this.state={songs:[
-        {name:'Gold Digger', artist: 'Kanye West'}, 
-        {name:'We Are Young', artist: 'Fun'},
+        {name: ' Gold Digger ', artist: 'Kanye West'}, 
+        {name: ' We Are Young ', artist: 'Fun'},
         {name: ' Time ', artist:' Pink Floyd' },
         {name: ' The End ', artist:' The Doors' },
         {name: ' Brothers In Arms ', artist:' Dire Straits' },
@@ -39,12 +39,15 @@ class Music extends React.Component{
     renderMusic = ()=>{
         return this.state.songs.map((s)=>{
             return (
-                <div className="border" > 
+
+                <div  style={{contentAlign:'center'}}> 
                 <br/>
                 <br/>
 
-                <Badge>
-                {s.name}
+
+                <div className="card" >
+                <Badge  >
+                { s.name}
                 </Badge>
                 <br/>
                 <br/>
@@ -61,7 +64,7 @@ class Music extends React.Component{
                  <Button outline > 
                 <p onClick={()=>this.deleteSong(s.name)}>Delete Song</p>
                 </Button> 
-
+                </div>
 
                 </div>
                 
@@ -78,12 +81,18 @@ render = ()=>{
     const {showForm} = this.state
     console.log('Music render method called')
     return (
-        <div className="border" className='card'>
-            <Button outline>
-            <p onClick={this.toggleForm}>{showForm ? 'Done' :  'Add Song' }</p>
+        <div  style={{textAlign : 'center'}}>
+            
+             <Badge>Playlist</Badge>
+              <br/>
+            <br/>
+            <Button outline >
+            <p onClick={this.toggleForm}>{showForm ? 'Done' :  'New Song ' }</p>
             </Button>
+           
+
         {showForm && <SongForm addSong={this.addSong} />}
-        <h1> Playlist:</h1>
+        
         {this.renderMusic()}
         </div>
         )

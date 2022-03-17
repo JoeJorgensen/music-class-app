@@ -1,11 +1,10 @@
-/* 
 
-@property --rotate {
+
+ @property --rotate {
     syntax: "<angle>";
-    initial-value: 132deg;
     inherits: false;
-    "css.lint.unknownAtRules": "ignore"
-  }
+    initial-value: 132deg;
+     }
   
   :root {
     --card-height: 65vh;
@@ -18,9 +17,12 @@
     background: #212534;
     display: flex;
     align-items: center;
+    /* align-self: center; */
     flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     box-sizing: border-box;
   }
   
@@ -34,12 +36,13 @@
     border-radius: 6px;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
     display: flex;
+    flex-direction: column;
     font-size: 1.5em;
     color: rgb(88 199 250 / 0%);
     cursor: pointer;
-    font-family: cursive;
+
   }
   
   .card:hover {
@@ -103,4 +106,5 @@
     font-weight: bold;
     margin-top: 2rem;
   }
-   */
+  
+  

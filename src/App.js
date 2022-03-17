@@ -6,9 +6,9 @@ import Badge from './Styles/Badge';
 import Button from './Styles/Button';
 function App() {
   return (
-    <div className="border" style={{textAlign: 'center'}}>
+    <div  >
     
-      <div className="border">
+      {/* <div className="border">
         <h1>Functional:</h1>
         <Music header= 'Functional Music'/>
           <Badge>Badge </Badge>  
@@ -22,9 +22,9 @@ function App() {
 
 
 
-      </div>
-      <div className="border">
-          <h1>Class:</h1>
+      </div> */}
+      <div className='font'>
+          {/* <h1>Class:</h1> */}
           <MusicClass header= 'Class Music'/>
           
       </div>
