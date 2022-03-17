@@ -16,9 +16,9 @@ color: white;
 }
 ${(props)=> 
 props.outline && css`
-background-color: white;
+background-color: #212534;
 color: ${PRIMARY_COLOR};
-border: 1px solid ${PRIMARY_COLOR};
+border: 2px solid ${PRIMARY_COLOR};
 &: hover{
     background-color:${PRIMARY_COLOR};
     color:white;

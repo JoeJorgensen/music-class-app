@@ -19,7 +19,7 @@ class Music extends React.Component{
         {name: ' Vienna ', artist:' Billy Joel' },
         {name: ' House Of The Rising Sun ', artist:' The Animals ' },
         {name: ' Going Up The Country ', artist:' Canned Heat ' },
-        {name: ' Past Lives ', artist:' BøRNS ' },
+        {name: ' Past Lives ', artist:' BØRNS ' },
         {name: ' All Apologies ', artist:' Nirvana ' },
         {name: ' Outro ', artist:' M83 ' },
 
@@ -93,10 +93,12 @@ render = ()=>{
     console.log('Music render method called')
     return (
         <div  style={{textAlign : 'center'}}>
-            
-             <Badge>Playlist</Badge>
-              <br/>
+            {/* '3px, #5ddcff, #3c67e3 43%, #4e00c2' */}
+             <Badge >Playlist</Badge>
+              <br />
+              
             <br/>
+            {/* <p style={{borderTop: '8px double  #3c67e3  '}}></p> */}
             <Button outline >
             <p onClick={this.toggleForm}>{showForm ? 'Done' :  'New Song ' }</p>
             </Button>

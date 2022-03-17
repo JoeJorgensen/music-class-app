@@ -48,9 +48,11 @@
   .card:hover {
     color: rgb(88 199 250 / 100%);
     transition: color 1s;
+
   }
+
   .card:hover:before, .card:hover:after {
-    animation: none;
+    animation: none; 
     opacity: 0;
   }
   
@@ -71,6 +73,25 @@
   }
   
   .card::after {
+
+
+
+
+
+    /* content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #ffc65d, #e3713c 43%, #c21d00);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 2.5s linear infinite; */
+
+
     position: absolute;
     content: "";
     top: calc(var(--card-height) / 6);
